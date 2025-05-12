@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>無名</title>
+    <link>http://localhost:1313/zh/</link>
+    <description>Recent content on 無名</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>© 2025 [张三](mailto:john.doe@seekella.com)</copyright>
+    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>让你的 Dock 别再满屏乱跑（macOS 多显示器指南）</title>
+      <link>http://localhost:1313/zh/blog/stop-the-dock-from-moving-across-monitors-in-macos/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/blog/stop-the-dock-from-moving-across-monitors-in-macos/</guid>
+      <description>&lt;h1 id=&#34;-跑酷的-dock快回来&#34;&gt;🏃‍♂️💨 跑酷的 Dock，快回来！&lt;/h1&gt;&#xA;&lt;p&gt;在 macOS 多显示器环境下，你的 Dock 总是&amp;quot;左蹦右跳&amp;quot;，像个调皮的孩子？别担心，这里有几招（带点幽默）帮你把 Dock 留在你想要的地方。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-用钱收服它-&#34;&gt;1. 用钱收服它 💸&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;有钱能使鬼推磨！&amp;ldquo;买个 &lt;a href=&#34;https://docklockpro.com/&#34;&gt;DockLock&lt;/a&gt;，Dock 乖乖只待在一个屏幕上。（钱包瘦了，心情稳了。）&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;2-把-dock-赶到角落-&#34;&gt;2. 把 Dock 赶到角落 ↔️&lt;/h2&gt;&#xA;&lt;p&gt;Dock 在底部时最爱乱跑。把它挪到左边或右边，跳跃欲望立刻下降。&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ defaults write com.apple.dock orientation left   &lt;span style=&#34;color:#75715e&#34;&gt;# 也可以用 right 或 bottom&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ killall Dock&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;左侧 Dock，刚开始很别扭，但慢慢你会习惯的（大概&amp;hellip;）&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;3-用-dockguardspoonhttpsgithubcomohyoungparkdockguardspoon-自己看管-&#34;&gt;3. 用 &lt;a href=&#34;https://github.com/ohyoungpark/DockGuard.spoon&#34;&gt;DockGuard.spoon&lt;/a&gt; 自己看管 🕵️‍♂️&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;自己的 Dock 自己守！&amp;ldquo;用 Hammerspoon 盯着 Dock，随时喊&amp;quot;禁止越狱！&amp;quot;（需要一点点代码能力和耐心）&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;4-让-dock-隐身-&#34;&gt;4. 让 Dock 隐身 🫥&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;拦不住你，那就让你消失！&amp;ldquo;把 Dock 设为自动隐藏，并把延迟调到天荒地老，Dock 基本成了传说。&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 自动隐藏 Dock&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ defaults write com.apple.dock autohide -bool true&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Dock 出现的延迟（秒，1000=16分40秒）&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ defaults write com.apple.dock autohide-delay -float &lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 出现动画也调慢点&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ defaults write com.apple.dock autohide-time-modifier -float &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 重启 Dock&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ killall Dock&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;现在 Dock 已经成了都市传说。（想找回来就把设置改回去）&lt;/em&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h1 id="-跑酷的-dock快回来">🏃‍♂️💨 跑酷的 Dock，快回来！</h1>
+<p>在 macOS 多显示器环境下，你的 Dock 总是&quot;左蹦右跳&quot;，像个调皮的孩子？别担心，这里有几招（带点幽默）帮你把 Dock 留在你想要的地方。</p>
+<hr>
+<h2 id="1-用钱收服它-">1. 用钱收服它 💸</h2>
+<p>&ldquo;有钱能使鬼推磨！&ldquo;买个 <a href="https://docklockpro.com/">DockLock</a>，Dock 乖乖只待在一个屏幕上。（钱包瘦了，心情稳了。）</p>
+<hr>
+<h2 id="2-把-dock-赶到角落-">2. 把 Dock 赶到角落 ↔️</h2>
+<p>Dock 在底部时最爱乱跑。把它挪到左边或右边，跳跃欲望立刻下降。</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ defaults write com.apple.dock orientation left   <span style="color:#75715e"># 也可以用 right 或 bottom</span>
+</span></span><span style="display:flex;"><span>$ killall Dock</span></span></code></pre></div><p><em>左侧 Dock，刚开始很别扭，但慢慢你会习惯的（大概&hellip;）</em></p>
+<hr>
+<h2 id="3-用-dockguardspoonhttpsgithubcomohyoungparkdockguardspoon-自己看管-">3. 用 <a href="https://github.com/ohyoungpark/DockGuard.spoon">DockGuard.spoon</a> 自己看管 🕵️‍♂️</h2>
+<p>&ldquo;自己的 Dock 自己守！&ldquo;用 Hammerspoon 盯着 Dock，随时喊&quot;禁止越狱！&quot;（需要一点点代码能力和耐心）</p>
+<hr>
+<h2 id="4-让-dock-隐身-">4. 让 Dock 隐身 🫥</h2>
+<p>&ldquo;拦不住你，那就让你消失！&ldquo;把 Dock 设为自动隐藏，并把延迟调到天荒地老，Dock 基本成了传说。</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 自动隐藏 Dock</span>
+</span></span><span style="display:flex;"><span>$ defaults write com.apple.dock autohide -bool true
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Dock 出现的延迟（秒，1000=16分40秒）</span>
+</span></span><span style="display:flex;"><span>$ defaults write com.apple.dock autohide-delay -float <span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 出现动画也调慢点</span>
+</span></span><span style="display:flex;"><span>$ defaults write com.apple.dock autohide-time-modifier -float <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 重启 Dock</span>
+</span></span><span style="display:flex;"><span>$ killall Dock</span></span></code></pre></div><p><em>现在 Dock 已经成了都市传说。（想找回来就把设置改回去）</em></p>
+<hr>
+<h2 id="5-干脆放弃吧-">5. 干脆放弃吧 😇</h2>
+<p>也许 Dock 爱跳是它的天性。&ldquo;Dock 啊，你想去哪就去哪吧&hellip;&ldquo;放下执念，内心平静。</p>
+<hr>
+<p><strong>祝你的 Dock 永远安分！（也希望有一天 Apple 能修好这个问题&hellip;）</strong></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>你好，世界</title>
+      <link>http://localhost:1313/zh/blog/hello-world/</link>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh/blog/hello-world/</guid>
+      <description>&lt;p&gt;这是我的第一篇中文文章！&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>这是我的第一篇中文文章！</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

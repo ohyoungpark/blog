@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Docklock on 이름없음</title>
+    <link>http://localhost:1313/ko/tags/docklock/</link>
+    <description>Recent content in Docklock on 이름없음</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <copyright>© 2025 홍길동 | [john.doe@seekella.com](mailto:john.doe@seekella.com)</copyright>
+    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/ko/tags/docklock/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>macOS에서 Dock 이동을 막고 한 화면에 고정하기</title>
+      <link>http://localhost:1313/ko/blog/stop-the-dock-from-moving-across-monitors-in-macos/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ko/blog/stop-the-dock-from-moving-across-monitors-in-macos/</guid>
+      <description>&lt;h1 id=&#34;-도망치는-dock-잡아라&#34;&gt;🏃‍♂️💨 도망치는 Dock, 잡아라!&lt;/h1&gt;&#xA;&lt;p&gt;macOS 멀티 모니터 환경에서 Dock이 자꾸 &amp;ldquo;이 화면 저 화면&amp;quot;으로 도망가나요?&#xA;내 Dock은 내 화면에만!&#xA;이제 더 이상 Dock의 자유분방한 영혼에 휘둘리지 마세요.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-돈으로-dock을-길들인다-&#34;&gt;1. 돈으로 Dock을 길들인다 💸&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;돈이면 다 돼!&amp;rdquo;&#xA;&lt;a href=&#34;https://docklockpro.com/&#34;&gt;DockLock&lt;/a&gt;을 구매해서 Dock을 강제로 한 화면에 묶어두세요.&#xA;(지갑은 가볍고, 마음은 평온해집니다.)&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;2-dock을-구석으로-몰아넣기-&#34;&gt;2. Dock을 구석으로 몰아넣기 ↔️&lt;/h2&gt;&#xA;&lt;p&gt;Dock이 아래에 있으면 점프력이 상승합니다.&#xA;왼쪽이나 오른쪽으로 보내면 &amp;ldquo;점프 본능&amp;quot;이 약해집니다.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ defaults write com.apple.dock orientation left   &lt;span style=&#34;color:#75715e&#34;&gt;# right, bottom도 가능&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ killall Dock&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;왼쪽 Dock, 처음엔 어색하지만 곧 적응됩니다. (아마도&amp;hellip;)&lt;/em&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h1 id="-도망치는-dock-잡아라">🏃‍♂️💨 도망치는 Dock, 잡아라!</h1>
+<p>macOS 멀티 모니터 환경에서 Dock이 자꾸 &ldquo;이 화면 저 화면&quot;으로 도망가나요?
+내 Dock은 내 화면에만!
+이제 더 이상 Dock의 자유분방한 영혼에 휘둘리지 마세요.</p>
+<hr>
+<h2 id="1-돈으로-dock을-길들인다-">1. 돈으로 Dock을 길들인다 💸</h2>
+<p>&ldquo;돈이면 다 돼!&rdquo;
+<a href="https://docklockpro.com/">DockLock</a>을 구매해서 Dock을 강제로 한 화면에 묶어두세요.
+(지갑은 가볍고, 마음은 평온해집니다.)</p>
+<hr>
+<h2 id="2-dock을-구석으로-몰아넣기-">2. Dock을 구석으로 몰아넣기 ↔️</h2>
+<p>Dock이 아래에 있으면 점프력이 상승합니다.
+왼쪽이나 오른쪽으로 보내면 &ldquo;점프 본능&quot;이 약해집니다.</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ defaults write com.apple.dock orientation left   <span style="color:#75715e"># right, bottom도 가능</span>
+</span></span><span style="display:flex;"><span>$ killall Dock</span></span></code></pre></div><p><em>왼쪽 Dock, 처음엔 어색하지만 곧 적응됩니다. (아마도&hellip;)</em></p>
+<hr>
+<h2 id="3-dockguardspoonhttpsgithubcomohyoungparkdockguardspoon로-직접-감시하기-">3. <a href="https://github.com/ohyoungpark/DockGuard.spoon">DockGuard.spoon</a>로 직접 감시하기 🕵️‍♂️</h2>
+<p>&ldquo;내 Dock은 내가 지킨다!&rdquo;
+Hammerspoon으로 Dock을 감시해서
+&ldquo;이탈 금지!&ldquo;를 외쳐보세요.
+(단, 약간의 코딩력과 인내심 필요)</p>
+<hr>
+<h2 id="4-dock을-은둔시켜버리기-">4. Dock을 은둔시켜버리기 🫥</h2>
+<p>&ldquo;점프하는 Dock 볼 바엔 차라리 안 본다!&rdquo;
+Dock을 자동 숨김 + 딜레이를 극단적으로 주면
+Dock이 사실상 증발합니다.</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># Dock 자동 숨김</span>
+</span></span><span style="display:flex;"><span>$ defaults write com.apple.dock autohide -bool true
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Dock이 나타나는 딜레이 (초 단위, 16분 40초)</span>
+</span></span><span style="display:flex;"><span>$ defaults write com.apple.dock autohide-delay -float <span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Dock이 나타나는 애니메이션 시간도 최대한 느리게</span>
+</span></span><span style="display:flex;"><span>$ defaults write com.apple.dock autohide-time-modifier -float <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Dock 재시작</span>
+</span></span><span style="display:flex;"><span>$ killall Dock</span></span></code></pre></div><p><em>이제 Dock은 전설 속으로&hellip; (다시 보고 싶으면 설정을 되돌리세요)</em></p>
+<hr>
+<h2 id="5-그냥-포기한다-">5. 그냥 포기한다 😇</h2>
+<p>Dock이 점프하는 건 macOS의 숙명!
+&ldquo;Dock아, 네가 가고 싶은 곳으로 가렴&hellip;&rdquo;
+마음의 평화를 찾으세요.</p>
+<hr>
+<p><strong>여러분의 Dock, 오늘도 평안하시길!
+(그리고 언젠가 애플이 이 문제를 고쳐주길&hellip;)</strong></p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

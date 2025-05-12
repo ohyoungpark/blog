@@ -1,0 +1,10 @@
+<a class="skip-link" href="#main-content">{{ i18n "skip-link" }}</a>
+
+{{/* 언어별로 블로그 메인으로 이동 */}}
+{{ $lang := .Site.Language.Lang }}
+{{ if eq $lang "ja" }}
+  <a href="/blog/" class="title"><h1>{{ .Site.Title }}</h1></a>
+{{ else }}
+  <a href="/{{ $lang }}/blog/" class="title"><h1>{{ .Site.Title }}</h1></a>
+{{ end }}
+<nav>{{- partial "nav.html" . -}}</nav>
