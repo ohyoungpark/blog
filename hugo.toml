@@ -1,7 +1,7 @@
 baseURL = 'https://blog.seekella.com/'
-languageCode = 'ja'
+languageCode = 'en'
 theme = "hugo-bearcub"
-defaultContentLanguage = 'ja'
+defaultContentLanguage = 'en'
 enableRobotsTXT = true
 
 [languages]
@@ -10,7 +10,7 @@ enableRobotsTXT = true
     author = '山田太郎'
     copyright = '© 2025 [山田太郎](mailto:john.doe@seekella.com)'
     languageName = '日本語'
-    weight = 1
+    weight = 2
     contentDir = 'content/ja'
     languageCode = 'ja'
     [languages.ja.params]
@@ -21,7 +21,7 @@ enableRobotsTXT = true
     author = '张三'
     copyright = '© 2025 [张三](mailto:john.doe@seekella.com)'
     languageName = '中文 '
-    weight = 2
+    weight = 3
     contentDir = 'content/zh'
     languageCode = 'zh'
     [languages.zh.params]
@@ -32,7 +32,7 @@ enableRobotsTXT = true
     author = 'John Doe'
     copyright = '© 2025 [John Doe](mailto:john.doe@seekella.com)'
     languageName = 'English'
-    weight = 3
+    weight = 1
     contentDir = 'content/en'
     languageCode = 'en'
     [languages.en.params]
