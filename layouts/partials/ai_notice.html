@@ -1,16 +1,3 @@
-<style>
-  .ai-notice {
-    background: #fffbe6;
-    border: 2px solid #ffe066;
-    color: #7c5700;
-    padding: 1em 1.5em;
-    margin-bottom: 2em;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 1.1em;
-    box-shadow: 0 2px 8px rgba(255,224,102,0.08);
-  }
-</style>
 {{ $showNotice := true }}
 {{ if isset .Params "translated" }}
   {{ if eq .Params.translated false }}
