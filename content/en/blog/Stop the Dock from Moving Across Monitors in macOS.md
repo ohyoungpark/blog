@@ -56,7 +56,14 @@ $ defaults write com.apple.dock autohide-time-modifier -float 5
 # Restart the Dock
 $ killall Dock
 ```
-*Now your Dock is a myth. (To bring it back, just reset these settings!)*
+*Now your Dock is a myth. (To bring it back, reset the settings as below:)*
+
+```shell
+$ defaults write com.apple.dock autohide -bool false
+$ defaults remove com.apple.dock autohide-delay
+$ defaults remove com.apple.dock autohide-time-modifier
+$ killall Dock
+```
 
 ---
 

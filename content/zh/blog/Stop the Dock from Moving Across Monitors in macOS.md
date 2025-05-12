@@ -56,7 +56,14 @@ $ defaults write com.apple.dock autohide-time-modifier -float 5
 # 重启 Dock
 $ killall Dock
 ```
-*现在 Dock 已经成了都市传说。（想找回来就把设置改回去）*
+*现在 Dock 已经成了都市传说。（想找回来就按下面这样设置）*
+
+```shell
+$ defaults write com.apple.dock autohide -bool false
+$ defaults remove com.apple.dock autohide-delay
+$ defaults remove com.apple.dock autohide-time-modifier
+$ killall Dock
+```
 
 ---
 
