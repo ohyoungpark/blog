@@ -66,7 +66,14 @@ $ defaults write com.apple.dock autohide-time-modifier -float 5
 # Dock 재시작
 $ killall Dock
 ```
-*이제 Dock은 전설 속으로... (다시 보고 싶으면 설정을 되돌리세요)*
+*이제 Dock은 전설 속으로... (다시 보고 싶으면 아래와 같이 설정을 되돌리세요)*
+
+```shell
+$ defaults write com.apple.dock autohide -bool false
+$ defaults remove com.apple.dock autohide-delay
+$ defaults remove com.apple.dock autohide-time-modifier
+$ killall Dock
+```
 
 ---
 

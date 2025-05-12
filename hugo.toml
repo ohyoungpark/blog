@@ -16,9 +16,6 @@ enableRobotsTXT = true
     [languages.ja.params]
       madeWith = "[ᕦʕ •ᴥ•ʔᕤ](https://github.com/clente/hugo-bearcub) で作られました"
       dateFormat = "2006年1月2日"
-      [languages.ja.params.author]
-        name = "山田太郎"
-        email = "john.doe@seekella.com"
   [languages.zh]
     title = '無名'
     author = '张三'
@@ -30,9 +27,6 @@ enableRobotsTXT = true
     [languages.zh.params]
       madeWith = "由 [ᕦʕ •ᴥ•ʔᕤ](https://github.com/clente/hugo-bearcub) 构建"
       dateFormat = "2006年1月2日"
-      [languages.zh.params.author]
-        name = "张三"
-        email = "john.doe@seekella.com"
   [languages.en]
     title = 'NoNAME'
     author = 'John Doe'
@@ -44,9 +38,6 @@ enableRobotsTXT = true
     [languages.en.params]
       madeWith = "Made with [ᕦʕ •ᴥ•ʔᕤ](https://github.com/clente/hugo-bearcub)"
       dateFormat = "January 2, 2006"
-      [languages.en.params.author]
-        name = "John Doe"
-        email = "john.doe@seekella.com"
   [languages.ko]
     title = '이름없음'
     author = '홍길동'
@@ -58,9 +49,6 @@ enableRobotsTXT = true
     [languages.ko.params]
       madeWith = "이 사이트는 [ᕦʕ •ᴥ•ʔᕤ](https://github.com/clente/hugo-bearcub)로 만들어졌습니다"
       dateFormat = "2006년 1월 2일"
-      [languages.ko.params.author]
-        name = "홍길동"
-        email = "john.doe@seekella.com"
 [params]
   themeStyle = "herman"
   [params.author]
